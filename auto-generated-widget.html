@@ -26,9 +26,19 @@
 box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #304701 0 -1px 9px, #89FF00 0 2px 12px;
 }
 
+.led-red {
+  margin: 0 auto;
+  width: 24px;
+  height: 24px;
+  background-color: red;
+  border-radius: 50%;
+  
+box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #304701 0 -1px 9px, #89FF00 0 2px 12px;
+}
+
 .led-box {
   height: 30px;
-  width: 25%;
+  width: 20%;
   margin: 10px 0;
   float: left;
 }
@@ -442,7 +452,7 @@ cpdefine("inline:com-chilipeppr-widget-indicadores", ["chilipeppr_ready", /* oth
             <!-- Tab panes -->
 
             <div class="tab-content">
-    
+                
                 <!-- Tab 1 -->
                 <div class="tab-pane active" id="com-chilipeppr-widget-indicadores-tab1">
                         <div class="led-box">
@@ -465,6 +475,12 @@ cpdefine("inline:com-chilipeppr-widget-indicadores", ["chilipeppr_ready", /* oth
                                 <div class="led-green" id="indicadormesas"></div>
                                 <p>Mesas modo Gantry</p>
                                     </div>
+
+                                    <div class="led-box">
+                                            <div class="led-red" id="indicadormesas"></div>
+                                            <p>Alarma</p>
+                                                </div>
+
                    
                 </div>
 
