@@ -16,6 +16,16 @@
     <style type='text/css'>
 /* CSS for ChiliPeppr Widget */
 
+.led-green {
+  margin: 0 auto;
+  width: 24px;
+  height: 24px;
+  background-color: #ABFF00;
+  border-radius: 50%;
+  
+box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #304701 0 -1px 9px, #89FF00 0 2px 12px;
+}
+
 #com-chilipeppr-widget-indicadores {
    
 }
@@ -422,7 +432,7 @@ cpdefine("inline:com-chilipeppr-widget-indicadores", ["chilipeppr_ready", /* oth
     
                 <!-- Tab 1 -->
                 <div class="tab-pane active" id="com-chilipeppr-widget-indicadores-tab1">
-                    <p>This is the content of tab 1.</p>
+                    <div class="led-green"></div>
                     <div class="">
                         <button type="button" class="btn btn-xs btn-default btn-helloworld2" style="margin: 4px 0;">Hello World 2</button>
                     </div>
