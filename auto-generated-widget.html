@@ -26,6 +26,19 @@
 box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #304701 0 -1px 9px, #89FF00 0 2px 12px;
 }
 
+.led-box {
+  height: 30px;
+  width: 25%;
+  margin: 10px 0;
+  float: left;
+}
+
+.led-box p {
+  font-size: 12px;
+  text-align: center;
+  margin: 1em;
+}
+
 #com-chilipeppr-widget-indicadores {
    
 }
@@ -432,7 +445,10 @@ cpdefine("inline:com-chilipeppr-widget-indicadores", ["chilipeppr_ready", /* oth
     
                 <!-- Tab 1 -->
                 <div class="tab-pane active" id="com-chilipeppr-widget-indicadores-tab1">
+                        <div class="led-box">
                     <div class="led-green"></div>
+                    <p>Green LED</p>
+                        </div>
                     <div class="">
                         <button type="button" class="btn btn-xs btn-default btn-helloworld2" style="margin: 4px 0;">Hello World 2</button>
                     </div>
