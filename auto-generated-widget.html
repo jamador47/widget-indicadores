@@ -26,6 +26,17 @@
 box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #304701 0 -1px 9px, #89FF00 0 2px 12px;
 }
 
+.led-off {
+  margin: 0 auto;
+  width: 24px;
+  height: 24px;
+  background-color: black;
+  border-radius: 50%;
+  
+box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #304701 0 -1px 9px, black 0 2px 12px;
+}
+
+
 .led-red {
   margin: 0 auto;
   width: 24px;
@@ -456,28 +467,28 @@ cpdefine("inline:com-chilipeppr-widget-indicadores", ["chilipeppr_ready", /* oth
                 <div class="tab-pane active" id="com-chilipeppr-widget-indicadores-tab1">
 
                         <div class="led-box">
-                    <div class="led-green" id="indicadorhusillo"></div>
+                    <div class="led-off" id="indicadorhusillo"></div>
                     <p>Husillo</p>
                         </div>
 
 
                         <div class="led-box">
-                                <div class="led-green" id="indicadortaladro"></div>
+                                <div class="led-off" id="indicadortaladro"></div>
                                 <p>Taladro</p>
                                     </div>
                         
                     <div class="led-box">
-                    <div class="led-green" id="indicadortaladropos"></div>
+                    <div class="led-off" id="indicadortaladropos"></div>
                     <p>Taladro Posición Trabajo</p>
                         </div>
 
                         <div class="led-box">
-                                <div class="led-green" id="indicadormesas"></div>
+                                <div class="led-off" id="indicadormesas"></div>
                                 <p>Mesas modo Gantry</p>
                                     </div>
 
                                     <div class="led-box">
-                                            <div class="led-red" id="indicadormesas"></div>
+                                            <div class="led-off" id="indicadormesas"></div>
                                             <p>Alarma</p>
                                                 </div>
 
