@@ -54,6 +54,20 @@ box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #304701 0 -1px 9px, red 0 2
   float: left;
 }
 
+.led-box2 {
+  height: 100px;
+  width: 25%;
+  margin: 10px 0;
+  float: left;
+}
+
+.led-box2 p {
+  font-size: 12px;
+  text-align: center;
+  margin: 1em;
+}
+
+
 .led-box p {
   font-size: 12px;
   text-align: center;
@@ -457,6 +471,8 @@ cpdefine("inline:com-chilipeppr-widget-indicadores", ["chilipeppr_ready", /* oth
             <ul class="nav nav-tabs" role="tablist">
                 <li class="active"><a href="#com-chilipeppr-widget-indicadores-tab1" role="tab" data-toggle="tab">Indicadores de Estado</a>
                 </li>
+                <li><a href="#com-chilipeppr-widget-indicadores-tab2" role="tab" data-toggle="tab">Brocas</a>
+                </li>
                 
             </ul>
             <!-- Tab panes -->
@@ -488,7 +504,7 @@ cpdefine("inline:com-chilipeppr-widget-indicadores", ["chilipeppr_ready", /* oth
                                     </div>
 
                                     <div class="led-box">
-                                            <div class="led-off" id="indicadormesas"></div>
+                                            <div class="led-off" id="indicadoralarma"></div>
                                             <p>Alarma</p>
                                                 </div>
 
@@ -498,8 +514,99 @@ cpdefine("inline:com-chilipeppr-widget-indicadores", ["chilipeppr_ready", /* oth
 
                 <!-- Tab 2 -->
                 <div class="tab-pane" id="com-chilipeppr-widget-indicadores-tab2">
-                    <p>This is the content of tab 2.</p>
+                       <div><div class="led-box2">
+                                <div class="led-off" id="ib1"></div>
+                                <p>1</p>
+                                    </div>
+            
+            
+                                    <div class="led-box2">
+                                            <div class="led-off" id="ib2"></div>
+                                            <p>2</p>
+                                                </div>
+                                    
+                                <div class="led-box2">
+                                <div class="led-off" id="ib3"></div>
+                                <p>3</p>
+                                    </div>
+            
+                                    <div class="led-box2">
+                                            <div class="led-off" id="ib4"></div>
+                                            <p>4</p>
+                                                </div>
                 </div>
+
+                <div><div class="led-box2">
+                        <div class="led-off" id="ib5"></div>
+                        <p>5</p>
+                            </div>
+    
+    
+                            <div class="led-box2">
+                                    <div class="led-off" id="ib6"></div>
+                                    <p>6</p>
+                                        </div>
+                            
+                        <div class="led-box2">
+                        <div class="led-off" id="ib7"></div>
+                        <p>7</p>
+                            </div>
+    
+                            <div class="led-box2">
+                                    <div class="led-off" id="ib8"></div>
+                                    <p>8</p>
+                                        </div>
+        </div>
+
+        <div><div class="led-box2">
+                <div class="led-off" id="ib9"></div>
+                <p>9</p>
+                    </div>
+
+
+                    <div class="led-box2">
+                            <div class="led-off" id="ib10"></div>
+                            <p>10</p>
+                                </div>
+                    
+                <div class="led-box2">
+                <div class="led-off" id="ib11"></div>
+                <p>11</p>
+                    </div>
+
+                    <div class="led-box2">
+                            <div class="led-off" id="ib12"></div>
+                            <p>12</p>
+                                </div>
+</div>
+
+<div><div class="led-box2">
+        <div class="led-off" id="ib13"></div>
+        <p>13</p>
+            </div>
+
+
+            <div class="led-box2">
+                    <div class="led-off" id="ib14"></div>
+                    <p>14</p>
+                        </div>
+            
+        <div class="led-box">
+        <div class="led-off" id="ib15"></div>
+        <p>15</p>
+            </div>
+
+            <div class="led-box2">
+                    <div class="led-off" id="ib16"></div>
+                    <p>16</p>
+                        </div>
+</div>
+
+
+
+
+
+            </div> 
 
                 <!-- Tab 3 -->
                 <div class="tab-pane" id="com-chilipeppr-widget-indicadores-tab3">
