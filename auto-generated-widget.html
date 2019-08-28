@@ -272,16 +272,11 @@
                     // example further below. Notice we have to use "that" so 
                     // that the this is set correctly inside the anonymous method
                     $('#' + this.id + ' .btn-sayhello').click(function () {
-                        console.log("saying hello");
+                        
+                        chilipeppr.publish("/com-chilipeppr-widget-serialport/ws/send", "sendnobuf /dev/ttyUSB0  $clear");
+                        alert("Se resetearon los errores de la máquina la máquina");
                         // Make sure popover is immediately hidden
-                        $('#' + that.id + ' .btn-sayhello').popover("hide");
-                        // Show a flash msg
-                        chilipeppr.publish(
-                            "/com-chilipeppr-elem-flashmsg/flashmsg",
-                            "Hello Title",
-                            "Hello World from widget " + that.id,
-                            1000
-                        );
+                      
                     });
 
                     // Init Hello World 2 button on Tab 1. Notice the use
@@ -457,7 +452,7 @@
                 <div class="btn-group">
                     <button type="button" class="btn btn-xs btn-default btn-sayhello" data-delay="1000"
                         data-animation="true" data-placement="auto" data-container="body" data-trigger="hover"
-                        data-title="Forzar Actualización" data-content="Generate a hello message">Say Hello
+                        data-title="RESET DE LA MÁQUINA" data-content="HACER UN RESET DE ERRORES DE LA MÁQUINA">RESET
                     </button>
                 </div>
                 <div class="btn-group">
