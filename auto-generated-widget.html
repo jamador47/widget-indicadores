@@ -272,9 +272,12 @@
                     // example further below. Notice we have to use "that" so 
                     // that the this is set correctly inside the anonymous method
                     $('#' + this.id + ' .btn-sayhello').click(function () {
-                        
+                        chilipeppr.publish("/com-chilipeppr-widget-serialport/ws/send", "sendnobuf /dev/ttyUSB0  !%");
+
+                       setTimeout(function(){
                         chilipeppr.publish("/com-chilipeppr-widget-serialport/ws/send", "sendnobuf /dev/ttyUSB0  $clear");
-                        alert("Se resetearon los errores de la máquina la máquina");
+                        alert("Se resetearon los errores de la máquina la máquina");},1000); 
+
                         // Make sure popover is immediately hidden
                       
                     });
@@ -469,7 +472,7 @@
                     </div>
                 </div>
             </div> <span class="panel-title" data-toggle="popover">Indicadores</span> <span style="font-size:9px;"
-                class="fb-build">v1</span>
+                class="fb-build">v2</span>
 
         </div>
         <div class="panel-body">
