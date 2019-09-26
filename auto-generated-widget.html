@@ -272,10 +272,10 @@
                     // example further below. Notice we have to use "that" so 
                     // that the this is set correctly inside the anonymous method
                     $('#' + this.id + ' .btn-sayhello').click(function () {
-                        chilipeppr.publish("/com-chilipeppr-widget-serialport/ws/send", "sendnobuf /dev/ttyUSB0  !%");
+                        chilipeppr.publish("/com-chilipeppr-widget-serialport/ws/send", "sendnobuf COM3  !%");
 
                        setTimeout(function(){
-                        chilipeppr.publish("/com-chilipeppr-widget-serialport/ws/send", "sendnobuf /dev/ttyUSB0  $clear");
+                        chilipeppr.publish("/com-chilipeppr-widget-serialport/ws/send", "sendnobuf COM3  $clear");
                         alert("Se resetearon los errores de la máquina la máquina");},1000); 
 
                         // Make sure popover is immediately hidden
